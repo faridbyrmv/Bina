@@ -1,0 +1,11 @@
+﻿@model Bina.Core.Dto.User.VerifyEmailDto
+
+<div class="container">
+    <h2>Verify Email</h2>
+    <form method="post">
+        <input type="hidden" name="Token" value="@Model.Token" />
+        <input type="email" name="Email" value="@Model.Email" placeholder="Email" required readonly />
+        <button type="submit">Verify</button>
+    </form>
+    <a href="@Url.Action("LogIn", "User")">Go back to Log in</a>
+</div>

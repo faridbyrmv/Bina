@@ -1,0 +1,14 @@
+﻿@model Bina.Core.Dto.User.RegistrationDto
+
+<div class="auth-wrapper">
+    <h2 class="auth-title">Register</h2>
+    <form method="post" class="auth-form">
+        <input type="text" name="Username" placeholder="Username" class="auth-input" required />
+        <input type="email" name="Email" placeholder="Email" class="auth-input" required />
+        <input type="password" name="Password" placeholder="Password" class="auth-input" required />
+        <button type="submit" class="auth-button">Register</button>
+    </form>
+    <p class="auth-footer">
+        Already have an account? <a href="@Url.Action("LogIn", "User")" class="auth-link">Log in</a>
+    </p>
+</div>
